@@ -48,4 +48,4 @@ Aplikasi pencatat keuangan pribadi berbasis web. Catat pemasukan dan pengeluaran
 
 ## 📄 Lisensi
 
-Proyek ini dibuat untuk keperluan belajar pribadi.
+Proyek ini dibuat untuk keperluan belajar pribadi mungkin akan ada pengembangan lebih lanjut dengan tujuan pembelajaran.
