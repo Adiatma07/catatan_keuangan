@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h3 {
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+li button {
+  background-color: #e74c3c;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+#total {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+#nav-tab {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tab-btn.aktif {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.aktif {
+  display: block;
+}
+
+#btn-hapus-semua {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-hapus-semua:hover {
+  background-color: #c0392b;
+}
+
+.laporan-box, .saldo-box {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.kotak-pemasukan, .kotak-pengeluaran, .kotak-akun {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.kotak-pemasukan {
+  background-color: #27ae60;
+}
+
+.kotak-pengeluaran {
+  background-color: #e74c3c;
+}
+
+.kotak-akun {
+  background-color: #2c3e50;
+}
+
+.kotak-total-semua {
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background-color: #8e44ad;
+}
+
+.kotak-pemasukan h3,
+.kotak-pengeluaran h3,
+.kotak-akun h3,
+.kotak-total-semua h3 {
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}

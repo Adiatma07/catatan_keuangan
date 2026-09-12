@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Catatan Keuangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Catatan Keuangan</h1>
+
+  <nav id="nav-tab">
+    <button type="button" class="tab-btn aktif" data-tab="beranda">Beranda</button>
+    <button type="button" class="tab-btn" data-tab="history">History</button>
+    <button type="button" class="tab-btn" data-tab="laporan">Laporan</button>
+    <button type="button" class="tab-btn" data-tab="pengaturan">Pengaturan</button>
+  </nav>
+
+  <!-- TAB BERANDA -->
+  <section id="beranda" class="tab-content aktif">
+    <form id="form-transaksi">
+      <select id="tipe">
+        <option value="pengeluaran">Pengeluaran</option>
+        <option value="pemasukan">Pemasukan</option>
+      </select>
+      <select id="kategori" required></select>
+      <input type="text" inputmode="numeric" id="jumlah" placeholder="Jumlah (Rp)" required>
+      <select id="akun">
+        <option value="cash">Cash</option>
+        <option value="bank">Bank</option>
+      </select>
+      <input type="date" id="tanggal" required>
+      <button type="submit">Tambah</button>
+    </form>
+    <h3>Total: Rp <span id="total">0</span></h3>
+  </section>
+
+  <!-- TAB HISTORY -->
+  <section id="history" class="tab-content">
+    <h2>Riwayat Transaksi</h2>
+    <ul id="list-transaksi"></ul>
+  </section>
+
+  <!-- TAB LAPORAN -->
+  <section id="laporan" class="tab-content">
+    <h2>Laporan Bulanan</h2>
+    <input type="month" id="pilih-bulan">
+
+    <div class="laporan-box">
+      <div class="kotak-pemasukan">
+        <p>Pemasukan</p>
+        <h3 id="total-pemasukan">Rp 0</h3>
+      </div>
+      <div class="kotak-pengeluaran">
+        <p>Pengeluaran</p>
+        <h3 id="total-pengeluaran">Rp 0</h3>
+      </div>
+    </div>
+
+    <h2>Saldo per Akun</h2>
+    <div class="saldo-box">
+      <div class="kotak-akun">
+        <p>Cash</p>
+        <h3 id="saldo-cash">Rp 0</h3>
+      </div>
+      <div class="kotak-akun">
+        <p>Bank</p>
+        <h3 id="saldo-bank">Rp 0</h3>
+      </div>
+    </div>
+
+    <div class="kotak-total-semua">
+      <p>Total Semua Rekening</p>
+      <h3 id="saldo-total">Rp 0</h3>
+    </div>
+  </section>
+
+  <!-- TAB PENGATURAN -->
+  <section id="pengaturan" class="tab-content">
+    <h2>Pengaturan</h2>
+    <button type="button" id="btn-hapus-semua">Hapus Semua Data</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
